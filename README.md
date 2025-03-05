@@ -1,4 +1,4 @@
-# Generative Adversarial Network (GAN) Study
+# Generative Adversarial Network (GAN)
 
 
 ## 📌 Introduction
