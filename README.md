@@ -4,8 +4,6 @@
 ## 📌 Introduction
 Generative Adversarial Network (GAN)은 생성 모델 중 하나로, 두 개의 신경망(Generator와 Discriminator)이 경쟁하면서 점점 더 정교한 데이터를 생성하도록 학습하는 모델입니다.
 
-이 저장소는 GAN에 대한 이론적 개념과 실습 내용을 정리하고, Google Colab에서 실험한 Jupyter Notebook 파일을 포함하고 있습니다.
-
 ## 🏗 Theory & Concepts
 1. **GAN의 기본 개념**
    - Generator: 랜덤 노이즈로부터 데이터를 생성
