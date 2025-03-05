@@ -35,5 +35,3 @@ Generative Adversarial Network (GAN)은 생성 모델 중 하나로, 두 개의 
 - [TensorFlow GAN Tutorial](https://www.tensorflow.org/tutorials/generative/dcgan)
 - [PyTorch GAN Example](https://github.com/pytorch/examples/tree/main/dcgan)
 
-## 📜 License
-MIT License
