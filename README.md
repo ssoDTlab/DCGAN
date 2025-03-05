@@ -8,7 +8,6 @@ Generative Adversarial Network (GAN)은 생성 모델 중 하나로, 두 개의 
 
 ## 🏗 Theory & Concepts
 1. **GAN의 기본 개념**
-   - GAN은 Goodfellow et al. (2014)에 의해 제안된 생성 모델로, Generator(생성자)와 Discriminator(판별자)가 서로 경쟁하면서 발전함.
    - Generator: 랜덤 노이즈로부터 데이터를 생성
    - Discriminator: 실제 데이터와 생성된 데이터를 구별
    - 두 네트워크는 서로의 성능을 향상시키면서 점점 더 현실적인 데이터를 생성하도록 학습됨.
