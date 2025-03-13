@@ -22,7 +22,7 @@ Generative Adversarial Network (GAN)은 생성 모델 중 하나로, 두 개의 
    - StyleGAN: 고해상도 이미지 생성을 위한 GAN
 
 
-## 🏆 Results
+## 🏆 Results(DCGAN)
 ### ✅ celeba 데이터셋 결과 예시
 | Random Noise | Generated Image |
 |---|---|
