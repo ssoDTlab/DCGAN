@@ -23,7 +23,7 @@ Generative Adversarial Network (GAN)은 생성 모델 중 하나로, 두 개의 
 
 
 ## 🏆 Results
-### ✅ MNIST 데이터셋 결과 예시
+### ✅ celeba 데이터셋 결과 예시
 | Random Noise | Generated Image |
 |---|---|
 | ![Random Noise](https://upload.wikimedia.org/wikipedia/commons/2/27/MnistExamples.png) | ![Generated Image](https://your-github-url.com/path-to-your-image.png) |
