@@ -1,35 +1,39 @@
-# Generative Adversarial Network (GAN)
+# DCGAN (Deep Convolutional Generative Adversarial Network)
+
+## 🔍 프로젝트 소개
+DCGAN(Deep Convolutional Generative Adversarial Network)은 생성적 적대 신경망(GAN)의 한 유형으로, 합성곱 신경망(CNN)을 활용하여 고품질의 이미지를 생성하는 모델입니다. 이 프로젝트에서는 DCGAN을 구현하고, 학습 과정을 기록하며, 생성된 이미지를 시각화합니다.
+
+## 📖 이론적 배경
+- **GAN(Generative Adversarial Network)**: 생성자(Generator)와 판별자(Discriminator)가 서로 경쟁하며 학습하는 모델
+- **DCGAN의 특징**:
+  - 전통적인 GAN에 CNN을 적용하여 안정적인 학습 가능
+  - Fully Connected Layer 제거, 배치 정규화(Batch Normalization) 사용
+  - LeakyReLU 활성화 함수 적용
+  - Transposed Convolution을 이용한 업샘플링
+
+### 1️⃣ 데이터셋 준비
+- 데이터셋: CelebA
+
+### 2️⃣ 모델 아키텍처
+- **생성자(Generator)**:
+  - 랜덤 노이즈를 입력받아 점진적으로 해상도를 증가시키며 이미지를 생성
+  - Transposed Convolution, Batch Normalization, ReLU 사용
+- **판별자(Discriminator)**:
+  - 입력된 이미지가 실제(real)인지 생성된(fake)인지 구별
+  - Convolution, Batch Normalization, LeakyReLU 사용
 
 
-## 📌 Introduction
-Generative Adversarial Network (GAN)은 생성 모델 중 하나로, 두 개의 신경망(Generator와 Discriminator)이 경쟁하면서 점점 더 정교한 데이터를 생성하도록 학습하는 모델입니다.
+## 🖥 실행 방법
+### 1️⃣ 환경 설정
+```bash
+pip install torch torchvision matplotlib numpy
+```
 
-## 🏗 Theory & Concepts
-1. **GAN의 기본 개념**
-   - Generator: 랜덤 노이즈로부터 데이터를 생성
-   - Discriminator: 실제 데이터와 생성된 데이터를 구별
-   - 두 네트워크는 서로의 성능을 향상시키면서 점점 더 현실적인 데이터를 생성하도록 학습됨.
+### 2️⃣ 코드 실행
+```bash
+python train_dcgan.py
+```
 
-2. **Loss Function**
-   - Generator Loss: 생성된 데이터가 진짜처럼 보이도록 유도
-   - Discriminator Loss: 실제 데이터와 생성된 데이터를 정확히 구별하도록 유도
-   - 학습이 안정적으로 이루어지도록 다양한 기법이 활용됨 (예: Wasserstein Loss, Gradient Penalty 등)
-
-3. **GAN Variants**
-   - DCGAN: CNN을 이용한 GAN 구조
-   - WGAN: Wasserstein Loss를 이용한 안정적인 학습
-   - CycleGAN: 이미지 스타일 변환을 위한 GAN
-   - StyleGAN: 고해상도 이미지 생성을 위한 GAN
-
-
-## 🏆 Results(DCGAN)
-### ✅ celeba 데이터셋 결과 예시
-| Random Noise | Generated Image |
-|---|---|
-| ![Random Noise](https://upload.wikimedia.org/wikipedia/commons/2/27/MnistExamples.png) | ![Generated Image](https://your-github-url.com/path-to-your-image.png) |
-
-## 🔗 References
-- [Goodfellow et al., 2014 - Generative Adversarial Networks](https://arxiv.org/abs/1406.2661)
-- [TensorFlow GAN Tutorial](https://www.tensorflow.org/tutorials/generative/dcgan)
-- [PyTorch GAN Example](https://github.com/pytorch/examples/tree/main/dcgan)
-
+## 📌 참고 자료
+- 논문: [Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks](https://arxiv.org/abs/1511.06434)
+- PyTorch 공식 튜토리얼
