@@ -7,6 +7,10 @@ DCGAN(Deep Convolutional Generative Adversarial Network)은 생성적 적대 신
 ### CelebA 데이터셋 결과 예시
 ![Reconstructed](https://github.com/ssoDTlab/DCGAN/blob/main/Figure_2.png)
 
+```bash
+pip install -r requirements.txt
+python DCGAN.py
+```
 
 ## 📌 참고 자료
 - 논문: [Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks](https://arxiv.org/abs/1511.06434)
