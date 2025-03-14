@@ -10,4 +10,4 @@ DCGAN(Deep Convolutional Generative Adversarial Network)은 생성적 적대 신
 
 ## 📌 참고 자료
 - 논문: [Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks](https://arxiv.org/abs/1511.06434)
-- PyTorch 공식 튜토리얼
+- PyTorch 공식 튜토리얼 : [https://tutorials.pytorch.kr/beginner/dcgan_faces_tutorial.html]
